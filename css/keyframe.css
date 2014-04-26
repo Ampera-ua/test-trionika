@@ -1,0 +1,69 @@
+/*keyframes*/
+
+@-webkit-keyframes open {
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes open {
+    to {
+        width: 200px;
+    }
+}
+
+@-webkit-keyframes close {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes close {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 0;
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes section_open {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes section_open {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes section_close {
+    from {
+        left: 0;
+    }
+    to {
+        left: -200px;
+    }
+}
+
+@keyframes section_close {
+    from {
+        left: 0;
+    }
+    to {
+        left: -200px;
+    }
+}

@@ -1,0 +1,88 @@
+
+.container {
+    position: relative;
+    height: 100px;
+    margin: auto;
+}
+
+.menu_line {
+    border: 1px solid #000;
+    text-align: right;
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #929292;
+    width: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    position: fixed;
+    overflow: hidden;
+}
+
+.nav__menu {
+    list-style: none;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.nav__link {
+    color: #f1f1f1;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.text {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.nav__link_close {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.section {
+    margin-top: 50px;
+    margin-right: 0;
+    overflow: auto;
+    height: 400px;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+}
+
+.close-nav .section,
+.close-nav .menu_line {
+    animation: section_open 0.5s forwards;
+    -webkit-animation: section_open 0.5s forwards;
+}
+
+.close-nav .nav {
+    animation: close 0.5s forwards;
+    -webkit-animation: close 0.5s forwards;
+}
+
+
+.open-nav .section,
+.open-nav .menu_line {
+    animation: section_close 0.5s forwards;
+    -webkit-animation: section_close 0.5s forwards;
+}
+
+.open-nav .nav {
+    animation: open 0.5s forwards;
+    -webkit-animation: open 0.5s forwards;
+}
